@@ -1,0 +1,8 @@
+category: X11
+requires: libgcc1 libogg0 libtheora0 libvorbis0 libvorbisenc2 libX11_6 libXdamage1 libXext6 libXfixes3 zlib0
+sdesc: "X11 desktop session recorder"
+ldesc: "recordMyDesktop is a X11 desktop session recorder that attemps 
+to be easy to use, yet also effective at it's primary task. As such, the 
+program is separated in two parts; a simple command line tool that 
+performs the basic tasks of capturing and encoding and a graphical 
+interface that exposes the program functionality in a usable way."
