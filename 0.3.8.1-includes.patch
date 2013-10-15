@@ -1,0 +1,71 @@
+--- origsrc/recordmydesktop-0.3.8.1/src/rmd.c	2008-12-13 10:24:06.000000000 -0600
++++ src/recordmydesktop-0.3.8.1/src/rmd.c	2013-10-14 22:33:13.026882800 -0500
+@@ -43,6 +43,7 @@
+ 
+ #include <stdio.h>
+ #include <stdlib.h>
++#include <string.h>
+ #include <errno.h>
+ 
+ int main(int argc,char **argv){
+--- origsrc/recordmydesktop-0.3.8.1/src/rmd_cache_frame.c	2008-12-13 10:00:34.000000000 -0600
++++ src/recordmydesktop-0.3.8.1/src/rmd_cache_frame.c	2013-10-14 22:33:48.075887500 -0500
+@@ -34,6 +34,7 @@
+ #include <signal.h>
+ #include <string.h>
+ #include <stdio.h>
++#include <stdlib.h>
+ #include <errno.h>
+ #include <math.h>
+ 
+--- origsrc/recordmydesktop-0.3.8.1/src/rmd_capture_sound.c	2008-12-13 10:00:34.000000000 -0600
++++ src/recordmydesktop-0.3.8.1/src/rmd_capture_sound.c	2013-10-14 22:34:23.331904000 -0500
+@@ -32,6 +32,7 @@
+ #include "rmd_types.h"
+ 
+ #include <pthread.h>
++#include <stdlib.h>
+ #include <string.h>
+ #include <errno.h>
+ 
+--- origsrc/recordmydesktop-0.3.8.1/src/rmd_get_frame.c	2008-12-13 10:04:10.000000000 -0600
++++ src/recordmydesktop-0.3.8.1/src/rmd_get_frame.c	2013-10-14 22:34:50.423453600 -0500
+@@ -41,6 +41,7 @@
+ 
+ #include <limits.h>
+ #include <pthread.h>
++#include <stdlib.h>
+ #include <sys/shm.h>
+ #include <errno.h>
+ 
+--- origsrc/recordmydesktop-0.3.8.1/src/rmd_make_dummy_pointer.c	2008-12-13 10:10:49.000000000 -0600
++++ src/recordmydesktop-0.3.8.1/src/rmd_make_dummy_pointer.c	2013-10-14 22:35:16.824963600 -0500
+@@ -30,6 +30,7 @@
+ #include "rmd_macro.h"
+ #include "rmd_types.h"
+ 
++#include <stdlib.h>
+ #include <X11/Xlib.h>
+ 
+ 
+--- origsrc/recordmydesktop-0.3.8.1/src/rmd_queryextensions.c	2008-12-13 10:11:21.000000000 -0600
++++ src/recordmydesktop-0.3.8.1/src/rmd_queryextensions.c	2013-10-14 22:35:46.903684000 -0500
+@@ -29,6 +29,7 @@
+ 
+ #include "rmd_types.h"
+ 
++#include <stdlib.h>
+ #include <X11/extensions/shape.h>
+ #include <X11/extensions/Xfixes.h>
+ #include <X11/extensions/Xdamage.h>
+--- origsrc/recordmydesktop-0.3.8.1/src/rmd_rescue.c	2008-12-13 10:12:09.000000000 -0600
++++ src/recordmydesktop-0.3.8.1/src/rmd_rescue.c	2013-10-14 22:36:07.987890000 -0500
+@@ -35,7 +35,7 @@
+ #include "rmd_types.h"
+ 
+ #include <pthread.h>
+-
++#include <stdlib.h>
+ #include <string.h>
+ 
+ 

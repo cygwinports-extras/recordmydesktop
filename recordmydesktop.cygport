@@ -1,0 +1,18 @@
+NAME="recordmydesktop"
+VERSION=0.3.8.1
+RELEASE=1
+CATEGORY="X11"
+SUMMARY="X11 desktop session recorder"
+DESCRIPTION="recordMyDesktop is a X11 desktop session recorder that attemps to
+be easy to use, yet also effective at it's primary task. As such, the program
+is separated in two parts; a simple command line tool that performs the basic
+tasks of capturing and encoding and a graphical interface that exposes the
+program functionality in a usable way."
+HOMEPAGE="http://recordmydesktop.sourceforge.net/"
+SRC_URI="mirror://sourceforge/recordmydesktop/${NAME}-${VERSION}.tar.gz"
+PATCH_URI="
+	0.3.8.1-includes.patch
+	0.3.8.1-xproto-split.patch
+"
+
+CYGCONF_ARGS="--enable-oss"
